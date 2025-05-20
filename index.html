@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alkosto E-commerce</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <img src="imagenes/Logo_Alkosto.webp" alt="Alkosto" class="logo" />
+    <div class="cart-icon" id="cart-icon">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <!-- Filtros -->
+  <section class="category-filter">
+    <select id="category-filter">
+      <option value="all">Todas las categorías</option>
+    </select>
+  </section>
+
+  <!-- Contenedor de productos -->
+  <main>
+    <div id="products" class="product-container"></div>
+  </main>
+
+  <!-- Modal de Detalles de Producto -->
+  <div id="product-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modal-details"></div>
+    </div>
+  </div>
+
+  <!-- Modal del Carrito -->
+  <div id="cart-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-cart">&times;</span>
+      <h2>Carrito de compras</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Akosto. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Inicio</a>
+        <a href="#">Contacto</a>
+        <a href="#">Política de privacidad</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
